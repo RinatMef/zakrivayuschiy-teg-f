@@ -11,6 +11,7 @@
     --accent-font: "PressStart2P-Regular";
     --title-font-size: clamp(3.0625rem, 2.7768rem + 1.4286vw, 4.0625rem);
     --bg-color: #fff;
+
     /* --font-weight: 400; */
     --bg-image: repeating-linear-gradient(
         to right,
