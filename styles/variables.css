@@ -1,35 +1,35 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-    --bg-color-h: #d3d3d3;
-    --bg-color-v-start: #e7e7e7;
-    --bg-color-v-finish: #1a1a1a;
-    --main-color: #000000;
-    --main-font:"Inter-Variable";
-    --button-color: #fff;
-    --fs: 18px;
-    --accent-font: "PressStart2P-Regular";
-    --title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-    --bg-color: #fff;
-    --font-weight-bold: 700;
-    --font-weight-regular: 400;
-    --bg-image: repeating-linear-gradient(
-        to right,
-        var(--bg-color-h) 2px,
-        transparent 2px,
-        transparent 4px
-      ),
-      repeating-linear-gradient(
-        to bottom,
-        var(--bg-color-v-start),
-        var(--bg-color-v-start) 2px,
-        transparent 2px,
-        transparent 4px
-      ),
-      linear-gradient(
-        to bottom,
-        var(--bg-color-v-start) 0.01%,
-        var(--bg-color-v-finish) 100%
-      );
-      --sparks-color: red;
-
+  --bg-color-h: #d3d3d3;
+  --bg-color-v-start: #e7e7e7;
+  --bg-color-v-finish: #1a1a1a;
+  --main-color: #000000;
+  --main-font: "Inter-Variable";
+  --button-color: #fff;
+  --fs: 18px;
+  --accent-font: "PressStart2P-Regular";
+  --title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --bg-color: #fff;
+  --font-weight-bold: 700;
+  --font-weight-regular: 400;
+  --bg-image: repeating-linear-gradient(
+      to right,
+      var(--bg-color-h) 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--bg-color-h),
+      var(--bg-color-h) 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(
+      to bottom,
+      var(--bg-color-v-start) 0.01%,
+      var(--bg-color-v-finish) 100%
+    );
+  --sparks-color: red;
+}

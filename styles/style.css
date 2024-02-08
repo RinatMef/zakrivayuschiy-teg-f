@@ -23,6 +23,8 @@ body {
   }
 }
 
+
+
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -241,8 +243,8 @@ body {
 .article__text {
   padding: 26px 25px 0 25px;
   font-size: var(--fs);
-  font-weight: var(--font-weight-regular);
   line-height: 21px;
+  font-variation-settings: 'wght' var(--font-weight-regular);
 
   @media (max-width: 696px) {
     padding: 26px 25px 0 25px;
