@@ -99,7 +99,7 @@ body {
   position: relative;
   text-transform: uppercase;
   padding: 0;
-  transition: all 0.3s;
+  transition: 0.3s;
 }
 
 .theme-menu__button::after {
@@ -210,7 +210,6 @@ body {
 .card__controls {
   display: flex;
   justify-content: end;
-
   gap: 8px;
   -webkit-margin-before: 25px;
   margin-block-start: 25px;
@@ -223,7 +222,7 @@ body {
   padding: 5px 10px;
   font-family: var(--main-font, sans-serif);
   font-size: var(--fs);
-  font-weight: var(--font-weight-bold);
+  font-variation-settings: "wgth" var(--font-weight-bold);
   border-bottom: 2px solid var(--main-color);
 }
 
@@ -350,6 +349,7 @@ body {
   text-align: center;
   color: var(--button-color);
   fill: var(--button-color);
+  mix-blend-mode: difference;
 }
 
 .button:focus {
