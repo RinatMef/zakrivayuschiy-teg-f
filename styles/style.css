@@ -95,7 +95,7 @@
 }
 
 .theme-menu__button:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .theme-menu__button::after {
@@ -109,13 +109,14 @@
   transform: scaleX(0);
   transform-origin: right;
   background: var(--main-color);
-  opacity: .6;
+  opacity: 0.6;
 }
+
 .theme-menu__button:focus {
   color: var(--main-color);
   outline: none;
-
 }
+
 .theme-menu__button:focus::after {
   transform: scaleX(1);
   transform-origin: left;
@@ -233,7 +234,7 @@
 
   @media (max-width: 696px) {
     top: 23px;
-  right: 11px;
+    right: 11px;
   }
 }
 
@@ -360,12 +361,12 @@
 
 .button-save-dialog::-webkit-backdrop {
   background-color: var(--main-color);
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .button-save-dialog::backdrop {
   background-color: var(--main-color);
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .button-save-dialog-close-button {

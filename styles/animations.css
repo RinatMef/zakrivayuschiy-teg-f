@@ -14,192 +14,190 @@
 */
 
 @-webkit-keyframes button-transparent {
-    from {
-      opacity: 1;
-    }
-  
-    to {
-      opacity: 0.6;
-    }
-  }
-  
-  @keyframes button-transparent {
-    from {
-      opacity: 1;
-    }
-  
-    to {
-      opacity: 0.6;
-    }
+  from {
+    opacity: 1;
   }
 
-  @-webkit-keyframes arrow-move {
-    from {
-      transform: translate(-20px);
-    }
-  
-    to {
-      transform: translate(-14px);
-    }
+  to {
+    opacity: 0.6;
   }
-  
-  @keyframes arrow-move {
-    from {
-      transform: translate(-20px);
-    }
-  
-    to {
-      transform: translate(-16px);
-    }
+}
+
+@keyframes button-transparent {
+  from {
+    opacity: 1;
   }
 
-  
+  to {
+    opacity: 0.6;
+  }
+}
 
-  .card__icon-button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-color: transparent;
-    border: none;
-    height: 34px;
-    width: 39px;
-    object-position: bottom;
+@-webkit-keyframes arrow-move {
+  from {
+    transform: translate(-20px);
   }
-  
-  .card__icon-button:focus {
-    border: none;
+
+  to {
+    transform: translate(-14px);
   }
-  
-  .card__icon-button:focus-visible {
-    outline: 2px solid var(--main-color);
+}
+
+@keyframes arrow-move {
+  from {
+    transform: translate(-20px);
   }
-  
-  .card__like-button {
-    padding: 9px 17px;
-    inline-size: 130px;
-    block-size: 38px;
-    border: 2px solid var(--main-color);
-    font-family: var(--accent-font, fantasy);
-    font-size: 14px;
-    background-color: transparent;
-    align-self: flex-end;
+
+  to {
+    transform: translate(-16px);
   }
-  
-  .like-icon {
-    fill: var(--main-color);
- }
-  
-  .contour {
-    fill: var(--main-color);
-    transition: fill 0.1s linear;
-  }
-  
-  .sparks {
-    fill: var(--sparks-color);
-    opacity: 0;
-  }
-  
+}
+
+.card__icon-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  height: 34px;
+  width: 39px;
+  object-position: bottom;
+}
+
+.card__icon-button:focus {
+  border: none;
+}
+
+.card__icon-button:focus-visible {
+  outline: 2px solid var(--main-color);
+}
+
+.card__like-button {
+  padding: 9px 17px;
+  inline-size: 130px;
+  block-size: 38px;
+  border: 2px solid var(--main-color);
+  font-family: var(--accent-font, fantasy);
+  font-size: 14px;
+  background-color: transparent;
+  align-self: flex-end;
+}
+
+.like-icon {
+  fill: var(--main-color);
+}
+
+.contour {
+  fill: var(--main-color);
+  transition: fill 0.1s linear;
+}
+
+.sparks {
+  fill: var(--sparks-color);
+  opacity: 0;
+}
+
+.core {
+  fill: transparent;
+  transition: fill 0.3s 0.03s linear;
+}
+
+.main-body {
+  fill: transparent;
+  transition: fill 0.3s linear;
+}
+
+.like-icon:hover {
   .core {
-    fill: transparent;
-    transition: fill 0.3s 0.03s linear;
-  }
-  
-  .main-body {
-    fill: transparent;
+    fill: var(--main-color);
     transition: fill 0.3s linear;
   }
-  
-  .like-icon:hover {
-    .core {
-      fill: var(--main-color);
-      transition: fill 0.3s linear;
-    }
-    .main-body {
-      fill: var(--main-color);
-      transition: fill 0.3s 0.05s linear;
-    }
+  .main-body {
+    fill: var(--main-color);
+    transition: fill 0.3s 0.05s linear;
   }
-  
-  .like-icon:active {
-    .core {
-      fill: var(--sparks-color);
-      transition: fill 0.3s linear;
-    }
-    .main-body {
-      fill: var(--sparks-color);
-      transition: fill 0.3s 0.05s linear;
-    }
+}
+
+.like-icon:active {
+  .core {
+    fill: var(--sparks-color);
+    transition: fill 0.3s linear;
   }
-  
-  .like-icon.is-liked {
-    .core {
-      fill: var(--sparks-color);
-      transition: fill 0.3s linear;
-    }
-    .main-body {
-      fill: var(--sparks-color);
-      transition: fill 0.3s 0.05s linear;
-    }
-  
-    .contour {
-      fill: var(--sparks-color);
-      transition: fill 0.3s 0.06s linear;
-    }
+  .main-body {
+    fill: var(--sparks-color);
+    transition: fill 0.3s 0.05s linear;
   }
-  
-  .like-icon.is-liked .heart {
-    -webkit-animation: heart-scale 0.3s 0.1s alternate ease-in;
-    animation: heart-scale 0.3s 0.1s alternate ease-in;
-    transform-origin: center;
+}
+
+.like-icon.is-liked {
+  .core {
+    fill: var(--sparks-color);
+    transition: fill 0.3s linear;
   }
-  
-  @-webkit-keyframes heart-scale {
-    from {
-      transform: scale(1);
-    }
-  
-    to {
-      transform: scale(1.5);
-    }
+  .main-body {
+    fill: var(--sparks-color);
+    transition: fill 0.3s 0.05s linear;
   }
-  
-  @keyframes heart-scale {
-    from {
-      transform: scale(1);
-    }
-  
-    to {
-      transform: scale(1.5);
-    }
+
+  .contour {
+    fill: var(--sparks-color);
+    transition: fill 0.3s 0.06s linear;
   }
-  
-  .like-icon.is-liked .sparks {
-    -webkit-animation: sparks 0.3s 0.3s alternate ease-in;
-    animation: sparks 0.3s 0.3s alternate ease-in;
-    transform-origin: center;
+}
+
+.like-icon.is-liked .heart {
+  -webkit-animation: heart-scale 0.3s 0.1s alternate ease-in;
+  animation: heart-scale 0.3s 0.1s alternate ease-in;
+  transform-origin: center;
+}
+
+@-webkit-keyframes heart-scale {
+  from {
+    transform: scale(1);
   }
-  
-  @-webkit-keyframes sparks {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
+
+  to {
+    transform: scale(1.5);
   }
-  
-  @keyframes sparks {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
+}
+
+@keyframes heart-scale {
+  from {
+    transform: scale(1);
   }
-  
-  .like-icon:focus {
-    border: 1px solid var(--main-color);
-    transition: 1s;
+
+  to {
+    transform: scale(1.5);
   }
+}
+
+.like-icon.is-liked .sparks {
+  -webkit-animation: sparks 0.3s 0.3s alternate ease-in;
+  animation: sparks 0.3s 0.3s alternate ease-in;
+  transform-origin: center;
+}
+
+@-webkit-keyframes sparks {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes sparks {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.like-icon:focus {
+  border: 1px solid var(--main-color);
+  transition: 1s;
+}
