@@ -8,9 +8,10 @@
   --main-font: "Inter-Variable";
   --button-color: #fff;
   --fs: 18px;
-  --accent-font: "PressStart2P-Regular";
+  --accent-font: "PressStart2P";
   --title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --bg-color: #fff;
+  --lable-stroke-color: #fff;
   --font-weight-bold: 700;
   --font-weight-regular: 400;
   --bg-image: repeating-linear-gradient(
