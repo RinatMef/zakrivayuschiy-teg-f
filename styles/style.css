@@ -281,15 +281,12 @@
   box-shadow: 2px 2px 0 0 transparent;
   transition: transform 0.3s ease;
   background-color: var(--bg-color);
-}
-
-.button-styles {
   border: 2px solid var(--main-color);
   font-family: var(--accent-font, fantasy);
   font-size: 14px;
 }
 
-.button-styles:hover {
+.button:hover {
   cursor: pointer;
 }
 
@@ -329,12 +326,12 @@
   mix-blend-mode: difference;
 }
 
-.button-styles:focus {
+.button:focus {
   box-shadow: 2px 2px 0 0 var(--main-color);
   outline: none;
 }
 
-.button-styles:focus-visible {
+.button:focus-visible {
   box-shadow: 2px 2px 0 0 var(--main-color);
 }
 
